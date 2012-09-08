@@ -75,13 +75,13 @@ set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp/,/tmp
 let g:tagbar_usearrow = 1
 
 "Tagbar on ,l
-nnoremap <leader>l :TagbarToggle<CR>
+nnoremap <silent> <leader>l :TagbarToggle<CR>
 
 "Nerdtree on ,t
 nnoremap <leader>t :NERDTreeToggle<CR>
 
 "CTAGS
-set tags+=~/.vim/tags/cpp
+set tags+=~/borg
 set tags+=~/.vim/tags/gtsam
 "Build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
@@ -94,3 +94,7 @@ let OmniCpp_ShowAccess = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
 
 au BufNewFile,BufRead *.todolist set filetype=todolist
+
+"Fish causes issues with ctags
+set noshelltemp
+set shell=sh
