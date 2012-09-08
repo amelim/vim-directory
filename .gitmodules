@@ -1,0 +1,18 @@
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = git://github.com/majutsushi/tagbar.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git://github.com/ervandew/supertab.git
+[submodule "bundle/delimimate"]
+	path = bundle/delimimate
+	url = git://github.com/Raimondi/delimitMate.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree
+[submodule "bundle/OmniCppComplete"]
+	path = bundle/OmniCppComplete
+	url = git://github.com/vim-scripts/OmniCppComplete
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides
