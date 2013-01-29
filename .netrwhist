@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/andrew/borg/gtsam2/gtsam2/discrete'
+let g:netrw_dirhist_2='/home/andrew/borg/aviation'
+let g:netrw_dirhist_3='/home/andrew/borg/LBA/lba'
+let g:netrw_dirhist_4='/home/andrew/borg/ransac/matlab'
+let g:netrw_dirhist_5='/home/andrew/borg/MastSLAM/trunk/ddfsam'
+let g:netrw_dirhist_6='/home/andrew/beagle-oe/setup2012/setup-scripts/sources/openembedded-core/meta/recipes-support/curl/curl'

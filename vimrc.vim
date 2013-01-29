@@ -7,7 +7,7 @@ set nocompatible
 set mousehide
 set mousemodel=popup
 
-set foldmethod=indent
+set foldmethod=syntax
 set foldlevel=99
 set foldenable
 
@@ -33,9 +33,9 @@ set guifont =ProggySquareTTSZ\ 12
 
 set nocompatible
 set smartindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set smarttab
 set expandtab
 set shiftround
@@ -94,7 +94,11 @@ let OmniCpp_ShowAccess = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
 
 au BufNewFile,BufRead *.todolist set filetype=todolist
+au BufNewFile,BufRead *.ino set filetype=arduino
 
 "Fish causes issues with ctags
 set noshelltemp
 set shell=sh
+
+nmap <F3> a<C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR><Esc>
+imap <F3> <C-R>=strftime("%Y-%m-%d %a %I:%M %p")<CR>
